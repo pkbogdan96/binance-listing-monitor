@@ -1,45 +1,63 @@
+# 🚀 Binance Listing Monitor (Python Bot)
 
-# Binance Listing Monitor (Python Project)
-
-This Python-based tool detects new coin listings on Binance using two approaches:
-
-1. **Binance API Monitoring**: Detects newly added trading pairs in real-time.
-2. **Web Scraping**: Scrapes Binance's announcements page for upcoming listings.
-
-## Features
-
-- ✅ Real-time tracking of new coins
-- ✅ Scrapes official Binance announcements
-- ✅ Easy to use and customize
-- ✅ Ideal for crypto traders and bot builders
-
-## Requirements
-
-- Python 3.x
-- Binance API Key & Secret
-- `python-binance`, `requests`, `beautifulsoup4`, `python-dotenv`
-
-## Setup
-
-1. Clone this repo or copy the files.
-2. Create a `.env` file and add your Binance keys:
-```
-BINANCE_API_KEY=your_api_key
-BINANCE_API_SECRET=your_api_secret
-```
-3. Install dependencies:
-```
-pip install -r requirements.txt
-```
-4. Run the script:
-```
-python binance_monitor.py
-```
-
-## Disclaimer
-
-This tool is for educational purposes only. Always trade responsibly.
+A real-time tool to detect new crypto listings on Binance using Python, the Binance API, and web scraping. Ideal for crypto traders, automation builders, or devs seeking alpha signals.
 
 ---
 
-Created by Bogdan – Crypto Automation Specialist
+## 🔧 Features
+
+- 📡 **Live Binance API monitoring** for new trading pairs  
+- 📰 **Scraping official Binance announcements** for early listing alerts  
+- ✅ Clean & modular Python code  
+- 🔐 Secure API key handling using `.env`  
+- 📈 Ready for Telegram/Email/Discord integrations  
+
+---
+
+## 📁 Project Structure
+
+📂 binance-listing-monitor/ ├── binance_monitor.py # Main Python script ├── .env.example # API key format (do not commit real keys!) ├── requirements.txt # Python dependencies └── README.md # You’re reading it
+
+
+
+---
+
+## 🚀 Setup Instructions
+
+1. **Clone the repo**  
+
+git clone https://github.com/pkbogdan96/binance-listing-monitor.git
+cd binance-listing-monitor
+Install dependencies
+
+
+pip install -r requirements.txt
+Add your Binance API keys
+Create a .env file based on .env.example:
+
+
+
+BINANCE_API_KEY=your_api_key
+BINANCE_API_SECRET=your_api_secret
+Run the bot
+
+
+python binance_monitor.py
+💡 How it works
+The bot checks Binance exchange info every 10 seconds for new trading pairs
+
+It also scrapes the official Binance Announcements Page
+for upcoming listings by searching for “will list” headlines
+
+🤖 Ideal for:
+Crypto scalpers & swing traders
+
+Telegram alert bots
+
+Portfolio auto-updaters
+
+Web3 data scrapers
+
+📬 Contact
+Made by Bogdan Pavelescu
+📩 Need a custom crypto bot? Hire me on Upwork or DM on GitHub!
